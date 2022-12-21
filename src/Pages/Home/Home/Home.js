@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import Products from '../../Products/Products';
 
 const Home = () => {
+
     return (
         <div>
-            <h2>This is home page</h2>
+            <Products />
         </div>
     );
 };
