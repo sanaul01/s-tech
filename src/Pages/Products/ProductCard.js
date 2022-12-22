@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
 
     const dispatch = useDispatch();
     return (
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card bg-base-100 shadow-lg hover:shadow-2xl ">
             <figure class="px-10 pt-10">
                 <img src={image} alt="Shoes" class="rounded-xl" />
             </figure>
@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
                 <h2 class="card-title">{model}</h2>
                 <p>Price: {price} k</p>
                 <div class="card-actions">
-                    <button onClick={()=> dispatch(AddToCart(product))} class="btn btn-primary">Add to Cart</button>
+                    <button onClick={()=> dispatch(AddToCart(product))} class="btn btn-primary w-72">Add to Cart</button>
                 </div>
             </div>
         </div>
