@@ -6,7 +6,12 @@ const Navbar = () => {
         <li><Link to="home">Home</Link></li>
         <li><Link to="about">About</Link></li>
         <li><Link to="products">Review</Link></li>
-        <li><Link to="contact">Contact</Link></li>
+        <li><Link to="cart">
+            <svg class="h-4 w-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="#004e66">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+
+        </Link></li>
         <li><Link to="login">Login</Link></li>
     </>
     return (
@@ -24,7 +29,7 @@ const Navbar = () => {
             </div>
             <div class="navbar-end hidden md:flex">
                 <ul class="menu menu-horizontal px-1">
-                {menuItems}
+                    {menuItems}
                 </ul>
             </div>
         </div>
